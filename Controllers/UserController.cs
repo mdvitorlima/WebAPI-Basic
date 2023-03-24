@@ -1,10 +1,12 @@
 ﻿using Azure;
 using BasicAPI.Entities;
 using BasicAPI.Service;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BasicAPI.Controllers
 {
+    [Authorize]
     [ApiController]
     [Route("[controller]")]
     public class UserController : ControllerBase
